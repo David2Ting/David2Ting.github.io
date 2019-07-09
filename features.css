@@ -1,0 +1,41 @@
+.banner {
+  background-image: url("./Arithmatica/Banner.png");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  height: 60vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-title {
+  font-family: "Poppins", Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 7vmin;
+  font-style: italic;
+  font-weight: thin;
+}
+.game-paragraph {
+  font-family: "Poppins", Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 3vmin;
+  font-weight: thin;
+}
+
+.text-box {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main1.css" />
+    <script src="main.js"></script>
+
+    <h1
+      style="background-color:#585f8a; text-align: center; box-shadow: 0px 5px 5px rgb(0, 0, 0,0.3);"
+    >
+      <img
+        src="./Images/MostlyFunctionalWordsOnly.png"
+        style="align-self:center; max-height: 10vh;width:auto;"
+      />
+    </h1>
+  </head>
+
+  <body style="background-color:rgb(109, 109, 109);">
+    <div class="container" style="width:100%;">
+      <h2 style="text-align:center; margin:0">Games</h2>
+      <div
+        class="row"
+        id="icons"
+        style="width:device-width; margin-right:0%;margin-left:0%; background-color:rgb(109, 109, 109);"
+      >
+        <div class="col-md-6" style="margin-bottom: 0%; margin-top:0%;">
+          <div class="brightness">
+            <a data-toggle="collapse" data-target="#arithmaticaCollapse">
+              <img src="./Images/Arithmatica Icon.png" class="box"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="col-md-6"
+          style="margin-bottom: 0%; margin-top:0%; background-color:rgb(109, 109, 109); display:flex; align-items:center"
+        >
+          <div class="brightness" style="align-self:center">
+            <a data-toggle="collapse" data-target="#reshapeCollapse">
+              <img src="./Images/Reshape Icon.png" class="box" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-md-12 accordion-group"
+          style="width:100%; margin-bottom: 2%; margin-top:2%"
+        >
+          <div
+            id="arithmaticaCollapse"
+            class="panel-collapse collapse indent moreinfo"
+            data-parent="#icons"
+          >
+            <p>
+              In Arithmatica you complete puzzles by adding, subtracting,
+              multiplying, dividing or using special operators on numbers to
+              make the goal number. Fun and challenging, you can test your
+              arithmetic skills over 3 game modes/ Levels: 100 handcrafted
+              levels of increasing difficulty making use of the 4 basic
+              arithmetic operators as well as a multitude of special operators.
+              Infinity: An infinite level generator, allowing you to select the
+              operators the level will use to craft the kind of level you want
+              to
+            </p>
+          </div>
+          <div
+            id="reshapeCollapse"
+            class="panel-collapse collapse indent moreinfo"
+            data-parent="#icons"
+          >
+            <p>
+              So, my end goal is to have the three buttons side-by-side and have
+              them collapse and expand their respective sections. The current
+              set-up works, however is a little awkward. For example, if someone
+              expands the keys section and then expands the attributes section,
+              they have to scroll below the keys section. There are two possible
+              solutions to this problem. One is that pressing one button causes
+              the other 2 to collapse themselves. This would mean that at any
+              given time, only one of these sections is expanded.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
