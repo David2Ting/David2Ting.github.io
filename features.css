@@ -1,7 +1,7 @@
 .banner {
   background-image: url("./Arithmatica/Banner.png");
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
   height: 60vh;
 
   /* Center and scale the image nicely */
@@ -16,6 +16,7 @@
   font-size: 7vmin;
   font-style: italic;
   font-weight: thin;
+  margin: 3%;
 }
 .game-paragraph {
   font-family: "Poppins", Geneva, Tahoma, sans-serif;
@@ -34,8 +35,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
   width: 30%;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .text-box {
+    width: 70%;
+  }
+  .game-paragraph {
+    font-size: 5vmin;
+  }
 }

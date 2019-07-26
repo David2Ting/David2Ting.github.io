@@ -3,54 +3,134 @@
   padding: 0;
 }
 
-.full {
-  background: linear-gradient(#ffffff, #6dd5fa, #2980b9);
-  width: 100vw;
+html {
+  scroll-behavior: smooth;
 }
 
-.landing-page {
+.full {
   width: 100vw;
-  height: 80vh;
   text-align: center;
 }
-.game {
+.myNav {
+  background: #00000000;
+  position: absolute;
+}
+.banner {
+  background-image: url("./Images/Banner.png");
+  height: 40vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   position: relative;
 }
-.games-container {
-  height: 300px;
-}
+
 .title-container {
-  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .title {
   margin: 0%;
-  font-family: "Poppins", Geneva, Tahoma, sans-serif;
-  color: #255372;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
   font-size: 14vmin;
+  max-width: 100%;
   text-transform: uppercase;
-  font-weight: thin;
+  font-weight: 40;
   letter-spacing: 5px;
 }
 
-.quote {
-  text-align: right;
-  font-family: "Poppins", Geneva, Tahoma, sans-serif;
-  color: #ffffff;
-  font-size: 5vmin;
-  font-style: italic;
-  font-weight: thin;
-  letter-spacing: 3px;
+.contents {
+  max-width: 650px;
+  display: inline-block;
+  margin: 0;
 }
 
-.view-games {
-  font-family: "Poppins", Geneva, Tahoma, sans-serif;
-  color: #ffffff;
-  bottom: 20%;
-  left: 50%;
-  font-size: 3vmin;
-  position: absolute;
-  font-style: italic;
-  font-weight: thin;
+.game-container {
+  text-align: center;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+  padding-top: 0;
+}
 
+.game-title {
+  margin: 0%;
+  margin-top: 3vmin;
+  margin-bottom: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  color: #7997ac;
+  text-transform: uppercase;
+  font-size: 10vmin;
+  text-align: center;
+  font-weight: 40;
+  letter-spacing: 5px;
+}
+
+.game-gif {
+  max-height: 60vh;
+  margin-top: 40px;
+}
+
+.game-paragraph {
+  margin: 0%;
+  font-family: "Noto Sans SC", sans-serif;
+  color: #757575;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 40;
+  padding-right: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.horizontal-ruler {
+  border-top: 2px solid rgb(153, 153, 153);
+}
+
+.logo-container {
+  height: 5vh;
+  margin-top: 5vh;
+}
+
+.content-anchor {
+  display: block;
+  position: relative;
+  top: -56px;
+  visibility: hidden;
+}
+
+p.mobile {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.logo-container {
   text-decoration: none;
+  height: 100%;
+  margin: 10px;
+}
+
+.badge-link {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.badge-icon {
+  text-decoration: none;
+  height: 10vmax;
+  max-height: 40px;
+}
+
+@media (max-width: 640px) {
+  p.mobile {
+    display: block;
+  }
+  p.desktop {
+    display: none;
+  }
 }

@@ -4,58 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="features.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Noto+Sans+SC&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="full">
-      <div class="landing-page">
+      <nav
+        class="navbar navbar-expand-lg sticky-top navbar-light bg-light my-nav"
+      >
+        <a class="navbar-brand" href="#">Mostly Functional</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Arithmatica-anchor">Arithmatica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Reshape-anchor">Reshape</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact-anchor">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner">
         <div class="title-container">
-          <h1 class="title">
-            Mostly<br />
-            Functional
-          </h1>
-          <h2 class="quote">Less is more . . . stupid</h2>
+          <h1 class="title">Mostly Functional</h1>
         </div>
-        <a class="view-games" href="#Arithmatica">
-          <h2>View Games</h2>
-        </a>
       </div>
-
-      <div class="games-container" id="games-container">
-        <div class="game" id="Arithmatica">
-          <div style="border: 2px solid #f1f1f1;">
-            <div class="banner"></div>
+      <div class="contents">
+        <div class="game-container" id="Arithmatica">
+          <a class="content-anchor" id="Arithmatica-anchor"></a>
+          <h1 class="game-title">Arithmatica</h1>
+          <div class="logo-container">
+            <a
+              href="http://play.google.com/store/apps/details?id=org.godotengine.arithmatica"
+              class="badge-link"
+            >
+              <img
+                src="./Images/google-play-badge-cropped.png"
+                class="badge-icon"
+              />
+            </a>
+            <a
+              href="http://play.google.com/store/apps/details?id=org.godotengine.arithmatica"
+              class="badge-link"
+            >
+              <img src="./Images/Applestore.svg" class="badge-icon" />
+            </a>
           </div>
-          <div class="text-box">
-            <h1 class="game-title">Arithmatica</h1>
-            <p class="game-paragraph">
-              A mathematics puzzle game combining elements of arithmetic logic
-              and positional blocks
-            </p>
-          </div>
+          <p class="game-paragraph desktop">
+            Arithmatica is a mathematics and logic based puzzle game equipped
+            with 3 different gamemodes. Play through 100 levels utilising 8
+            different operators, generate you're own random puzzles to beat or
+            play an endless "stack em up" gamemode and try to achieve the
+            highest score!
+          </p>
+          <p class="game-paragraph mobile">
+            Arithmatica is a mathematics puzzle game. Comes with 3 gamemodes to
+            test and improve you're arithmatic ability
+          </p>
+          <img src="./Images/Arithmatica_1.gif" class="game-gif" />
+          <hr class="horizontal-ruler" />
         </div>
-        <div class="game" id="Reshape ">
-          <div style="border: 2px solid #f1f1f1;">
-            <div
-              class="banner"
-              style="background-image: url(./Arithmatica/Reshape-banner.png)"
-            ></div>
+        <div class="game-container" id="Reshape">
+          <a class="content-anchor" id="Reshape-anchor"></a>
+          <h1 class="game-title" style="color:rgb(138, 121, 95)">Reshape</h1>
+          <div class="logo-container">
+            <a
+              href="http://play.google.com/store/apps/details?id=org.godotengine.arithmatica"
+              class="badge-link"
+            >
+              <img
+                src="./Images/google-play-badge-cropped.png"
+                class="badge-icon"
+              />
+            </a>
+            <a
+              href="http://play.google.com/store/apps/details?id=org.godotengine.arithmatica"
+              class="badge-link"
+            >
+              <img src="./Images/Applestore.svg" class="badge-icon" />
+            </a>
           </div>
-          <div class="text-box">
-            <h1 class="game-title">Reshape</h1>
-            <p class="game-paragraph">
-              An infinite puzzle game about planning moves ahead to create
-              combinations of both numbers and shapes
-            </p>
-          </div>
+          <p class="game-paragraph desktop">
+            Reshape is an endless puzzle set combination game. In this game you
+            combining both numbers and shapes together to try and get the
+            biggest tiles on the board. In order to gain the highest scores
+            you'll have to plan multiple turns ahead, calculate probabilities
+            and utilize your resources wisely.
+          </p>
+          <p class="game-paragraph mobile">
+            Reshape is an endless puzzle game where you join numbers and shapes
+            together in groups of threes to attain the highest possible score.
+          </p>
+          <img src="./Images/Reshape.gif" class="game-gif" />
+
+          <hr class="horizontal-ruler" />
+        </div>
+        <div class="game-container" id="Contact">
+          <a class="content-anchor" id="Contact-anchor"></a>
+          <h1 class="game-title" style="color:grey">Contact Us</h1>
+          <p>
+            If you have any questions or concerns contact us at
+            tryosaurus@gmail.com
+          </p>
+          <p>All games made with the open source godot engine.</p>
         </div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      "use strict";
+      $(document).ready(function() {
+        $("nav")
+          .find("li")
+          .on("click", "a", function() {
+            $(".navbar-collapse").collapse("hide");
+          });
+      });
+    </script>
   </body>
 </html>
