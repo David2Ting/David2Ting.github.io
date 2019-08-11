@@ -72,6 +72,9 @@ html {
 
 .game-gif {
   max-height: 60vh;
+  max-width: 80vw;
+  height: auto;
+  width: auto;
   margin-top: 40px;
 }
 
@@ -127,6 +130,9 @@ p.mobile {
 }
 
 @media (max-width: 640px) {
+  html {
+    scroll-behavior: auto;
+  }
   p.mobile {
     display: block;
   }
