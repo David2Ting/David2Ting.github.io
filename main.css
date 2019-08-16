@@ -16,15 +16,16 @@ html {
   position: absolute;
 }
 .banner {
-  background-image: url("./Images/Banner.png");
+  /* background-image: url("./Images/Banner.png"); */
   height: 40vh;
-
+  background-color: #424853;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title-container {
@@ -138,5 +139,8 @@ p.mobile {
   }
   p.desktop {
     display: none;
+  }
+  .banner {
+    height: 20vh;
   }
 }
