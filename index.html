@@ -16,14 +16,14 @@
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <title>Document</title>
+    <title>Digital Zero</title>
   </head>
   <body>
     <div class="full">
       <nav
         class="navbar navbar-expand-lg sticky-top navbar-light bg-light my-nav"
       >
-        <a class="navbar-brand" href="#">Mostly Functional</a>
+        <a class="navbar-brand" href="#">Digital Zero</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,12 +51,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#Contact-anchor">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacyPolicy.html">Privacy Policy</a>
+            </li>
           </ul>
         </div>
       </nav>
       <div class="banner">
         <div class="title-container">
-          <h1 class="title">Mostly Functional</h1>
+          <h1 class="title">Digital Zero</h1>
         </div>
       </div>
       <div class="contents">
@@ -159,7 +162,9 @@
         $("nav")
           .find("li")
           .on("click", "a", function() {
-            $(".navbar-collapse").collapse("hide");
+            setTimeout(function() {
+              $(".navbar-collapse").collapse("hide");
+            }, 0);
           });
       });
     </script>
